@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    height: 5%;
+    background-color: forestgreen;
+
+    .list{
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        margin-right: 20px;
+        font-size: large;
+    }
+}
