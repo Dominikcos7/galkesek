@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="info">
+        <h3>Elérhetőségeim</h3>
+        <ul>
+            <li><mat-icon>call</mat-icon>+36/30 111-1111</li>
+        </ul>
+        <ul>
+            <li><mat-icon>mail</mat-icon>info&commat;example.com</li>
+        </ul>
+    </div>
+    <div class="contact-form">
+        <form [formGroup]="contactForm">
+            Penge anyaga:
+            <mat-select placeholder="penge" name="blade">
+                <mat-option *ngFor="let blade of blades" [value]=blade>
+                    {{ blade }}
+                </mat-option>
+            </mat-select>
+            Markolat anyaga:
+            <mat-select placeholder="markolat" name="handle">
+                <mat-option *ngFor="let handle of handles" [value]=handle>
+                    {{ handle }}
+                </mat-option>
+            </mat-select>
+            Bakni anyaga:
+            <mat-select placeholder="bakni" name="peek">
+                <mat-option *ngFor="let peek of peeks" [value]=peek>
+                    {{ peek }}
+                </mat-option>
+            </mat-select>
+        </form>
+    </div>
+</div>

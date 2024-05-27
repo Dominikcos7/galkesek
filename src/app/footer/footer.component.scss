@@ -1,0 +1,10 @@
+.container {
+    background-color: forestgreen;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+    .info {
+        padding: 10px;
+    }
+}

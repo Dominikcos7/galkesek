@@ -1,0 +1,5 @@
+<div class="container">
+    <div class="card" *ngFor="let item of testimonials; index as i">
+        <app-testimonial-card [body]="item.body" [name]="item.name"></app-testimonial-card>
+    </div>
+</div>
